@@ -1,6 +1,7 @@
+TARGET = json-xml
 LDLIBS += -lyajl
 
-all: json-xml
+all: $(TARGET)
 
 clean:
-	rm -rf json-xml
+	rm -rf $(TARGET)
