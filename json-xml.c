@@ -6,7 +6,12 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <string.h>
+#include <ctype.h>
 #include <yajl/yajl_parse.h>
+
+#ifndef _WIN32
+# include <unistd.h>
+#endif
 
 #define NAME "json-xml"
 
@@ -174,7 +179,7 @@ static int handle_map_start(void *vp)
 static int handle_map_key(void *vp, const unsigned char *str, size_t len)
 {
 	popkey(vp); /* previous key (or dummy) */
-	pushkey(vp, sanitize(str, len));
+	pushkey(vp, sanitize((const char *)str, len));
 	return 1;
 }
 
