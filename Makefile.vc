@@ -1,0 +1,6 @@
+CFLAGS = /nologo /O1 /I yajl-2.1.0\include yajl-2.1.0\lib\yajl_s.lib
+
+all: json-xml.exe
+
+clean:
+	del *.exe *.pdb *.obj *.ilk

@@ -1,0 +1,9 @@
+*.swo
+*.swp
+*.obj
+*.pdb
+*.obj
+*.ilk
+.vs
+json-xml
+json-xml.exe

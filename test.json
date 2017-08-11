@@ -1,0 +1,15 @@
+{
+  "words": ["hello", "world"],
+  "style": {
+    "exclaim": true,
+    "volume": 0.8
+  },
+  "outputs": [{
+      "fd": 0
+    }, {
+      "file": "/dev/null",
+      "ext": null
+    }
+  ],
+  "1 (evil)": "Whoa&ndash;<br>"
+}

@@ -1,0 +1,30 @@
+UNIX
+
+ 1. Install a yajl (with headers, e.g. libyajl-dev)
+ 2. Run make
+
+      make
+ 
+ 3. If the yajl installation can't be found by the compiler, try adjusting
+    the Makefile:
+      
+      CFLAGS  += -I/path/to/yajl/headers
+      LDFLAGS += -L/path/to/yajl/ibs
+
+ 4. Optionally, install:
+ 
+      make install
+
+WINDOWS
+
+(For MinGW from an MSYS shell, follow the Unix steps above.)
+
+A Windows version of yajl is provided. By default, the Windows version of
+json-yaml statically links it so no DLL is required to run the program.
+
+ 1. Install Visual C++
+ 2. Open a developer command prompt with access to cl.exe and nmake.exe
+ 3. Run nmake
+
+      namke /f Makefile.vc
+
