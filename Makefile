@@ -4,6 +4,8 @@ BINDIR = $(prefix)/bin
 
 LDLIBS += -lyajl
 
+.PHONY: all install uninstall clean
+
 all: $(TARGET)
 
 install: $(TARGET)
