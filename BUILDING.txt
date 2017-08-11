@@ -11,9 +11,10 @@ UNIX
       CFLAGS  += -I/path/to/yajl/headers
       LDFLAGS += -L/path/to/yajl/ibs
 
- 4. Optionally, install:
- 
-      make install
+There are also install and uninstall targets:
+
+  sudo make install
+  sudo make uninstall
 
 WINDOWS
 
