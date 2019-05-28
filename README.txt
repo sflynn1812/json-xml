@@ -5,7 +5,7 @@ output:
 
   json-xml <test.json
    or
-  cat test.json | json.xml
+  cat test.json | json-xml
 
 Element names are assigned like so:
 
@@ -50,3 +50,8 @@ See also:
 
 Written by Sijmen J. Mulder <ik@sjmulder.nl>, 2017.
 
+Addendum by Stephen Flynn <steve.wf33@yahoo.com>, 2019.
+
+To output to a file use command:
+
+  json-xml <test.json >test.xml
